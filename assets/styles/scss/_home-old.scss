@@ -1,0 +1,137 @@
+.hero-full-screen {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    top: -75px;
+
+    * {
+        color: $white;
+        font-family: $body-font-family
+    }
+
+    h2 {
+        font-family: $header-font-family;
+        font-size: rem-calc(32px);
+    }
+
+    p {
+        font-size: rem-calc(20);
+        line-height: rem-calc(24);
+
+        em {
+            font-size: rem-calc(14);
+        }
+    }
+
+    figure {
+        background-color: hsla(0,0%,100%,.8);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8)
+    }
+}
+
+#home-section-1 {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: none;
+
+    h2 {
+        font-size: rem-calc(29);
+        text-shadow: 2px 2px 4px $black;
+    }
+
+    p {
+        text-shadow: 2px 2px 4px $black;
+    }
+}
+
+
+#home-section-2 {
+    background-color: #b8b9bb;
+
+    h2 {
+        color: $blue;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: $blue;
+    }
+
+    p {
+        color: #343434;
+        font-size: 18px;
+    }
+}
+
+#invite {
+    background-position: top center;
+    background-size: contain;
+}
+
+#hero-panel {
+    padding-top: rem-calc(36);
+
+    .wp-block-image {
+        display: none;
+    }
+}
+
+#sermons {
+    background-size: 50%;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-size: rem-calc(40);
+        margin-top: 5rem;
+        float: right;
+    }
+}
+
+#contact {
+    background-color: $blue;
+}
+
+@include breakpoint(medium) {
+    .home {
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+
+    #hero-panel {
+        background-image: radial-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5), rgba(0,0,0,.3) );
+    }
+
+    .hero-full-screen {
+        p {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    #home-section-1 {
+        background-position: bottom left;
+        background-size: contain;
+    }
+
+    #invite {
+        background-position: top center;
+        background-size: auto;
+    }
+
+    #hero-panel {
+        .wp-block-image {
+            display: block;
+        }
+    }
+}

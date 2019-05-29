@@ -30,23 +30,28 @@
 
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin&display=swap" rel="stylesheet">
+
         <?php wp_head(); ?>
 
     </head>
 
     <body <?php body_class(); ?>>
-
+        <header class="header"  role="banner">
+              <!-- Load Top Bar with logo and navigation -->
+              <div class="mainnav-container" <?php if ( ! is_page_template( 'page-services.php' ) ): ?> data-sticky-container <?php else: ?> <?php endif; ?>>
+                <div class="main-nav<?php if ( ! is_page_template( 'page-services.php' ) ): ?> sticky <?php else: ?> <?php endif; ?>" <?php if ( ! is_page_template( 'page-services.php' ) ): ?> data-sticky data-margin-top="0" <?php else: ?> <?php endif; ?>>
+                  <div class="grid-container">
+                      <?php get_template_part( 'parts/nav/nav', 'offcanvas-topbar' ); ?>
+                  </div>
+                </div>
+              </div>
+              <!-- Load Search Modal -->
+              <?php get_template_part( 'parts/nav/search', 'modal' ); ?>
+        </header>
         <div class="off-canvas-wrapper">
 
-            <!-- Load off-canvas container. Feel free to remove if not using. -->
-            <?php get_template_part( 'parts/content', 'offcanvas' ); ?>
+            <!-- Load off-canvas container for mobile nav -->
+            <?php get_template_part( 'parts/content/content', 'offcanvas' ); ?>
 
             <div class="off-canvas-content" data-off-canvas-content>
-
-                <header class="header" role="banner">
-
-                     <!-- This navs will be applied to the topbar, above all content
-                          To see additional nav styles, visit the /parts directory -->
-                     <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-
-                </header> <!-- end .header -->
