@@ -16,6 +16,7 @@
                             </nav>
                         </div>
                         <div class="small-12 medium-12 large-12 cell">
+                            <p class="source-org copyright">Site Design &amp; Development by <br class="show-for-small-only"><a href="https://www.eblairsolutions.com" target="_blank">eBLAIR Solutions, Inc.</a></p>
                             <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
                         </div>
                     </div> <!-- end #inner-footer -->
