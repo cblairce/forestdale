@@ -6,6 +6,6 @@
  */
 ?>
 
-<div class="off-canvas position-right" id="off-canvas" data-off-canvas>
-	<?php joints_off_canvas_nav(); ?>
+<div class="off-canvas position-right" id="off-canvas" data-smooth-scrool data-offset="55" data-off-canvas>
+    <?php joints_off_canvas_nav(); ?>
 </div>
