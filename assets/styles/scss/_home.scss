@@ -141,6 +141,13 @@ body {
         font-weight: 600;
     }
 
+    p a {
+        color: #168c40;
+        &:hover {
+            color: #fff;
+        }
+    }
+
     .sermon {
         p {
             color: $white;

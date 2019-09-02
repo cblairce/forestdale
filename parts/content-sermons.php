@@ -1,11 +1,11 @@
-<?php 
+<?php
 // Setting up the Query - see http://codex.wordpress.org/Class_Reference/WP_Query
     $latest_sermon = new WP_Query(
-        array( 
-            'post_type' => 'wpfc_sermon', 
-            'posts_per_page' => 5, 
-            'post_status' => 'publish', 
-            'no_found_rows' => true, 
+        array(
+            'post_type' => 'wpfc_sermon',
+            'posts_per_page' => 5,
+            'post_status' => 'publish',
+            'no_found_rows' => true,
             'update_post_term_cache' => false, 'update_post_meta_cache' => false )
     );
 
@@ -61,5 +61,5 @@ if ($latest_sermon->have_posts()) : ?>
             Word to our daily lives.</p>
         <p>We post a video of our Sunday service, including the message, each week on our <a href="https://www.facebook.com/pg/FDCCGrapevine/videos/?ref=page_internal" target="_blank">Facebook Page</a>. We hope to see you here at Forest Dale in the near future.</p>
     </div>
-        
+
 <?php endif; ?>
