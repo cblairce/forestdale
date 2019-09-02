@@ -54,7 +54,7 @@ if ($latest_sermon->have_posts()) : ?>
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-<? else: ?>
+<?php else: ?>
         <p class="card-user-profile-info">Darin’s love of God’s Word, sense of humor, and
             conversational style of preaching bring the Bible to life and helps us all apply God’s
             Word to our daily lives.</p>
