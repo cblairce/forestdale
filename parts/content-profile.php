@@ -8,9 +8,6 @@
         </div>
         <p class="card-user-profile-name">Darin Pratt</p>
         <p class="card-user-profile-status">Senior Minister</p>
-        <p class="card-user-profile-info">Darin’s love of God’s Word, sense of humor, and
-            conversational style of preaching bring the Bible to life and helps us all apply God’s
-            Word to our daily lives.</p>
     </div>
 
     <div class="card-user-profile-actions">
