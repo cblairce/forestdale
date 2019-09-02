@@ -55,8 +55,11 @@ if ($latest_sermon->have_posts()) : ?>
         </button>
     </div>
 <?php else: ?>
-        <p class="card-user-profile-info">Darin’s love of God’s Word, sense of humor, and
+    <div style="text-align: left; font-size: 1.25rem;">
+        <p>Darin’s love of God’s Word, sense of humor, and
             conversational style of preaching bring the Bible to life and helps us all apply God’s
             Word to our daily lives.</p>
-            <p>We post a video of our Sunday service, including the message, each week on our <a href="https://www.facebook.com/pg/FDCCGrapevine/videos/?ref=page_internal" target="_blank">Facebook Page</a>. We hope to see you here at Forest Dale in the near future.</p>
+        <p>We post a video of our Sunday service, including the message, each week on our <a href="https://www.facebook.com/pg/FDCCGrapevine/videos/?ref=page_internal" target="_blank">Facebook Page</a>. We hope to see you here at Forest Dale in the near future.</p>
+    </div>
+        
 <?php endif; ?>
